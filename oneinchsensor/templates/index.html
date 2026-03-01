@@ -24,7 +24,8 @@
             </div>
 
             <div class="logo">
-                ONEINCH SENSOR
+                <img src="{% static 'images/logo/COMING SOON.png' %}" alt="", class="logo">
+
             </div>
 
             <div class="nav-links">
@@ -37,7 +38,7 @@
 
 
     <!-- HERO SECTION -->
-    <section class="hero" style="background-image: url('images/hero.jpg');">
+    <section class="hero" style="background-image: url('{% static "images/pre-wedding/prewedding10.jpg" %}');">
         <div class="hero-content">
             <h1>Luxury Cinematic Visual Storytelling</h1>
             <p>Crafting Timeless Moments With Emotion & Elegance</p>
@@ -52,13 +53,13 @@
 
         <div class="grid">
 
-            <img src="images/prewedding1.jpg" alt="">
-            <img src="images/prewedding2.jpg" alt="">
-            <img src="images/prewedding3.jpg" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding1.jpg' %}" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding4.jpg' %}" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding8.jpg' %}" alt="">
 
-            <img src="images/club1.jpg" alt="">
-            <img src="images/club2.jpg" alt="">
-            <img src="images/portrait1.jpg" alt="">
+            <img src="{% static 'images/club/club1.jpg' %}" alt="">
+            <img src="{% static 'images/club/club2.jpg' %}" alt="">
+            <img src="{% static 'images/potraits/potrait4.jpg' %}" alt="">
 
         </div>
     </section>
@@ -69,9 +70,9 @@
         <h2 class="section-title">Our Specialities</h2>
 
         <div class="grid">
-            <img src="images/prewedding1.jpg" alt="">
-            <img src="images/club1.jpg" alt="">
-            <img src="images/portrait1.jpg" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding9.jpg' %}" alt="">
+            <img src="{% static 'images/club/club1.jpg' %}" alt="">
+            <img src="{% static 'images/potraits/potrait3.jpg' %}" alt="">
         </div>
     </section>
 
@@ -97,7 +98,7 @@
 
 
     <!-- SCRIPT -->
-    <script src="js/script.js"></script>
+    <script src="{% static 'script.js' %}"></script>
 
 </body>
 </html>

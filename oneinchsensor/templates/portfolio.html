@@ -22,7 +22,7 @@
             </div>
 
             <div class="logo">
-                ONEINCH SENSOR
+                <img src="{% static 'images/logo/COMING SOON.png' %}" alt="", class="logo">
             </div>
 
             <div class="nav-links">
@@ -35,7 +35,7 @@
 
 
     <!-- PAGE HERO -->
-    <section class="hero" style="background-image: url('images/portfolio-hero.jpg'); height: 70vh;">
+    <section class="hero" style="background-image: url('{% static "images/pre-wedding/prewedding10.jpg" %}');">
         <div class="hero-content">
             <h1>Our Work</h1>
         </div>
@@ -47,11 +47,20 @@
         <h2 class="section-title">Pre Wedding</h2>
 
         <div class="grid">
-            <img src="images/prewedding1.jpg" alt="">
-            <img src="images/prewedding2.jpg" alt="">
-            <img src="images/prewedding3.jpg" alt="">
-            <img src="images/prewedding4.jpg" alt="">
-            <img src="images/prewedding5.jpg" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding1.jpg' %}" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding2.jpg' %}" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding3.jpg' %}" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding4.jpg' %}" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding5.jpg' %}" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding6.jpg' %}" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding7.jpg' %}" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding8.jpg' %}" alt="">
+            <img src="{% static 'images/pre-wedding/prewedding9.jpg' %}" alt="">
+
+
+
+
+
         </div>
     </section>
 
@@ -61,27 +70,14 @@
         <h2 class="section-title">Club Events</h2>
 
         <div class="grid">
-            <img src="images/club1.jpg" alt="">
-            <img src="images/club2.jpg" alt="">
-            <img src="images/club3.jpg" alt="">
-            <img src="images/club4.jpg" alt="">
-            <img src="images/club5.jpg" alt="">
+            <img src="{% static 'images/club/club1.jpg' %}" alt="">
+            <img src="{% static 'images/club/club2.jpg' %}" alt="">
+            <img src="{% static 'images/club/club3.jpg' %}" alt="">
         </div>
     </section>
 
 
     <!-- AFTERMOVIE -->
-    <section class="section">
-        <h2 class="section-title">Aftermovie</h2>
-
-        <div class="grid">
-            <img src="images/aftermovie1.jpg" alt="">
-            <img src="images/aftermovie2.jpg" alt="">
-            <img src="images/aftermovie3.jpg" alt="">
-            <img src="images/aftermovie4.jpg" alt="">
-            <img src="images/aftermovie5.jpg" alt="">
-        </div>
-    </section>
 
 
     <!-- PORTRAIT -->
@@ -89,11 +85,13 @@
         <h2 class="section-title">Portrait</h2>
 
         <div class="grid">
-            <img src="images/portrait1.jpg" alt="">
-            <img src="images/portrait2.jpg" alt="">
-            <img src="images/portrait3.jpg" alt="">
-            <img src="images/portrait4.jpg" alt="">
-            <img src="images/portrait5.jpg" alt="">
+            <img src="{% static 'images/potraits/potrait1.jpg' %}" alt="">
+            <img src="{% static 'images/potraits/potrait2.jpg' %}" alt="">
+            <img src="{% static 'images/potraits/potrait3.jpg' %}" alt="">
+            <img src="{% static 'images/potraits/potrait4.jpg' %}" alt="">
+            <img src="{% static 'images/potraits/potrait5.jpg' %}" alt="">
+            <img src="{% static 'images/potraits/potrait6.jpg' %}" alt="">
+
         </div>
     </section>
 
@@ -105,7 +103,7 @@
 
 
     <!-- SCRIPT -->
-    <script src="js/script.js"></script>
+    <script src="{% static 'script.js' %}"></script>
 
 </body>
 </html>
