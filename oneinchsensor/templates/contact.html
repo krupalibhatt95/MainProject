@@ -17,8 +17,8 @@
         <div class="nav-container">
 
             <div class="nav-links">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
+                <a href="{% url 'index' %}">HOME</a>
+                <a href="{% url 'about' %}">ABOUT</a>
             </div>
 
             <div class="logo">
@@ -26,8 +26,8 @@
             </div>
 
             <div class="nav-links">
-                <a href="portfolio.html">PORTFOLIO</a>
-                <a href="contact.html">CONTACT</a>
+                <a href="{% url 'portfolio' %}">PORTFOLIO</a>
+                <a href="{% url 'contact' %}">CONTACT</a>
             </div>
 
         </div>
@@ -47,15 +47,15 @@
 
         <h2 class="section-title">Get In Touch</h2>
 
-        <form>
+        <form method = "POST">
+            {% csrf_token %}
+            <input type="text" name = "name"placeholder="Full Name" required>
 
-            <input type="text" placeholder="Full Name" required>
+            <input type="email" name = "email"placeholder="Email Address" required>
 
-            <input type="email" placeholder="Email Address" required>
+            <input type="tel" name = "tel"placeholder="Phone Number">
 
-            <input type="tel" placeholder="Phone Number">
-
-            <input type="text" placeholder="Event Type (Pre-Wedding / Club / Portrait / Aftermovie)">
+            <input type="text" name = "text"placeholder="Event Type (Pre-Wedding / Club / Portrait / Aftermovie)">
 
             <textarea rows="6" placeholder="Tell us about your vision..." required></textarea>
 

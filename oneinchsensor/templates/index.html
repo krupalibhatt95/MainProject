@@ -19,8 +19,8 @@
         <div class="nav-container">
 
             <div class="nav-links">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
+                <a href="{% url 'index' %}">HOME</a>
+                <a href="{% url 'about' %}">ABOUT</a>
             </div>
 
             <div class="logo">
@@ -29,8 +29,8 @@
             </div>
 
             <div class="nav-links">
-                <a href="portfolio.html">PORTFOLIO</a>
-                <a href="contact.html">CONTACT</a>
+                <a href="{% url 'portfolio' %}">PORTFOLIO</a>
+                <a href="{% url 'contact' %}">CONTACT</a>
             </div>
 
         </div>
@@ -42,7 +42,7 @@
         <div class="hero-content">
             <h1>Luxury Cinematic Visual Storytelling</h1>
             <p>Crafting Timeless Moments With Emotion & Elegance</p>
-            <a href="portfolio.html" class="btn">VIEW PORTFOLIO</a>
+            <a href="{% url 'portfolio' %}" class="btn">VIEW PORTFOLIO</a>
         </div>
     </section>
 
@@ -59,7 +59,7 @@
 
             <img src="{% static 'images/club/club1.jpg' %}" alt="">
             <img src="{% static 'images/club/club2.jpg' %}" alt="">
-            <img src="{% static 'images/potraits/potrait4.jpg' %}" alt="">
+            <img src="{% static 'images/potraits/potrait5.jpg' %}" alt="">
 
         </div>
     </section>
@@ -72,7 +72,7 @@
         <div class="grid">
             <img src="{% static 'images/pre-wedding/prewedding9.jpg' %}" alt="">
             <img src="{% static 'images/club/club1.jpg' %}" alt="">
-            <img src="{% static 'images/potraits/potrait3.jpg' %}" alt="">
+            <img src="{% static 'images/potraits/potrait4.jpg' %}" alt="">
         </div>
     </section>
 
